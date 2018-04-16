@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>显示静态图片</title>
+</head>
+<body>
+    <h3>显示静态文件</h3>
+
+    硬编码(static_ulr): <br>
+    <img src="/static/images/fruit.jpg">
+    <br>
+    static标签：<br>
+    <img src="{% static 'images/fruit.jpg' %}">
+</body>
+</html>

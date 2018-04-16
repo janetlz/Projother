@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择你的地区</title>
+</head>
+<body>
+    <select id="id_prov">
+        <option>--请选择省份--</option>
+        {% for p in provinces %}
+            <option id="{{ p.id }}">{{ p.title }}</option>
+        {% endfor %}
+    </select>
+    <select id="id_city">
+        <option>--请选择城市--</option>
+    </select>
+    <select id="id_dist">
+        <option>--请选择区县--</option>
+    </select>
+</body>
+</html>

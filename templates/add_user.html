@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>自定义添加用户</title>
+
+
+</head>
+<body>
+    <form method="post" action="/do_add_user" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        <label>用户名：</label>
+        <input type="text" name="username" id="username"><br>
+        <label>上传头像:</label>
+        <input type="file" name="avatar"><br>
+        <input type="submit" value="新增用户">
+    </form>
+
+    <div sytle="color: red">{{ errmsg }}</div>
+</body>
+</html>

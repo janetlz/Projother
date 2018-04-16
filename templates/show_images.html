@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>所有头像</title>
+</head>
+<body>
+    {% load staticfiles %}
+
+    <h3>显示所有用户头像</h3>
+    {% for user in users %}
+        <img src="{% static 'media/' %}{{ user.avatar }}"><br>
+    {% endfor %}
+
+</body>
+</html>
